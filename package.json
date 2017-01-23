@@ -1,7 +1,7 @@
 {
   "name": "privileges",
-  "version": "1.0.0",
-  "description": "Privileges checking for express using bitwise.",
+  "version": "1.0.1",
+  "description": "Access routing middleware for Express using bits.",
   "main": "index.js",
   "scripts": {
     "test": "mocha **Spec.js"

@@ -1,5 +1,5 @@
 # Privileges
-Routing middleware for Express using bits.
+Access routing middleware for Express using bits.
 
 ## Getting Started
 Privileges references req.user.privileges for its checks. Use any method you want to populate the req.user.privileges.
