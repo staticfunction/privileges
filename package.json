@@ -1,0 +1,17 @@
+{
+  "name": "privileges",
+  "version": "1.0.0",
+  "description": "Privileges checking for express using bitwise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **Spec.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "express": "^4.14.0",
+    "mocha": "^3.2.0"
+  }
+}
