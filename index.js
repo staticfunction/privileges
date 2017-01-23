@@ -11,10 +11,21 @@ exports.express = () => {
             if(req.user.privileges === undefined)
                 return next(noPrivilegeError);
 
-            handler.callbacks.forEach((callback) => {
-                if(callback.mask == (callback.mask & req.user.privileges))
-                    return callback(req, res, next);
-            })
+            var successCallback;
+
+            for(var i = 0; i < handler.callbacks.length; i++) {
+
+                var callback = handler.callbacks[i];
+
+                if(callback.mask == (callback.mask & req.user.privileges)) {
+                    successCallback = callback;
+                    break;
+                }
+            }    
+
+            if(successCallback) {
+                return successCallback(req, res, next);
+            }
 
             next(noPrivilegeError);
         }
