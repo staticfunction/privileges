@@ -1,6 +1,6 @@
 {
   "name": "privileges",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Access routing middleware for Express using bits.",
   "main": "index.js",
   "scripts": {
